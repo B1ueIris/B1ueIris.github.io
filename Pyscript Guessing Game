@@ -5,7 +5,7 @@
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
     <style>
       label{
-              display:block;
+         display:block;
       }
     </style>
   </head>
@@ -15,10 +15,10 @@
     </py-config>
     <py-script>
         import numpy as np
-      selection =np.radnom.randint(0,100,1)[0]
+        selection = np.random.randint(0,100,1)[0]
     </py-script>
     <form>
-        <label for="guess">Guess:</labrl><input name="guess" id="guess">
+        <label for="guess">Guess:</label><input name="guess" id="guess">
 
         <button type="button" id="submit">Check Guess</button>
         <label for="result">Result:</label><div name="result"></div>
@@ -36,7 +36,9 @@
           elif user_guess > selection:
               reslut.write("Try again! Your guess was too high.")
           else:
-              
+              result.write("Try again! Your guess was too low")
 
 
-
+    </py-script>
+  </body>
+</html> 
